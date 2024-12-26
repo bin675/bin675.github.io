@@ -1,0 +1,16 @@
+---
+layout: default
+title: 实时天气查询
+---
+
+<div class="background-container" id="bg-container" style="background-image: url('{{ site.baseurl }}/assets/images/mo.jpg')"></div>
+<div class="container">
+    <h1>实时天气查询</h1>
+    <div class="search-box">
+        <input type="text" id="city" placeholder="请输入城市名称">
+        <button onclick="searchWeather()">查询</button>
+    </div>
+    <div id="weather-result"></div>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/script.js"></script>
